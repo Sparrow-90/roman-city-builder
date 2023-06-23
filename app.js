@@ -1,8 +1,11 @@
 const sources = document.querySelectorAll('.source');
 const targets = document.querySelectorAll('.target');
-
+const elementTitles = document.querySelectorAll('.element-title');
+const descriptionContainers = document.querySelectorAll('.description-container');
+const exitBtn = document.querySelectorAll('.close');
 let selectedSource = null;
 
+// Obsługa przeciągania elementów źródłowych
 sources.forEach((source) => {
   source.addEventListener('dragstart', (e) => {
     e.dataTransfer.setData('text/plain', e.target.dataset.name);
@@ -16,6 +19,7 @@ sources.forEach((source) => {
   });
 });
 
+// Obsługa opuszczania elementów docelowych
 targets.forEach((target) => {
   target.addEventListener('dragover', (e) => {
     e.preventDefault();
@@ -23,9 +27,9 @@ targets.forEach((target) => {
 
   target.addEventListener('dragenter', (e) => {
     if (selectedSource !== null && selectedSource.dataset.name === target.dataset.name) {
-      e.target.style.backgroundColor = 'lightgreen';
+      e.target.style.backgroundColor = 'rgba(144, 238, 144, 0.521)';
     } else {
-      e.target.style.backgroundColor = 'red';
+      e.target.style.backgroundColor = 'rgba(255, 0, 0, 0.541)';
     }
   });
 
@@ -43,6 +47,7 @@ targets.forEach((target) => {
       e.target.classList.add('remove-border');
       sourceElement.style.width = `${target.clientWidth}px`;
       sourceElement.style.height = `${target.clientHeight}px`;
+      sourceElement.setAttribute('draggable', 'false');
     }
 
     targets.forEach((target) => {
@@ -51,27 +56,21 @@ targets.forEach((target) => {
   });
 });
 
-const elementTitles = document.querySelectorAll('.element-title');
-const descriptionContainers = document.querySelectorAll('.description-container');
-
+// Obsługa kliknięcia w elementy tytułów
 elementTitles.forEach((title, index) => {
   title.addEventListener('click', () => {
     descriptionContainers.forEach((container) => {
-      container.style.left=`-30`;
+      container.style.left = '-30%';
     });
-    descriptionContainers[index].style.left=`0`;
+    descriptionContainers[index].style.left = '0';
   });
 });
 
-
-
-
-const exitBtn = document.querySelectorAll('.close')
-
-exitBtn.forEach((exit)=>{
-    exit.addEventListener('click', ()=>{
-        descriptionContainers.forEach((container) => {
-            container.style.left=`-30%`;
-          }) 
-    })
-})
+// Obsługa kliknięcia w przyciski zamykające
+exitBtn.forEach((exit) => {
+  exit.addEventListener('click', () => {
+    descriptionContainers.forEach((container) => {
+      container.style.left = '-30%';
+    });
+  });
+});

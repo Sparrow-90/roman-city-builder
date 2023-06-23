@@ -73,8 +73,9 @@ body{
     width: 80%;
     height: 100%;
     background-image: url(./Zasób\ 2@3x.png);
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     background-color: lightcoral;
     
 }
@@ -144,31 +145,31 @@ body{
 }
 
 .koszary{
-    bottom: 5%;
+    bottom: 9%;
     left: 40%;
-    width: 350px;
-    height: 200px;
+    width: 450px;
+    height: 250px;
    
 }
 
 .temple{
-    top: 15%;
+    top: 12%;
     left: 19%;
-    width: 180px;
-    height:180px;
+    width: 200px;
+    height:200px;
    
 }
 
 .forum{
-    top: 30%;
+    top: 23%;
     left: 30%;
-    width: 180px;
-    height:150px;
+    width: 240px;
+    height:240px;
     
 }
 
 .insula{
-    top: 37%;
+    top: 33%;
     left: 45%;
     width: 150px;
     height:150px;
@@ -176,7 +177,7 @@ body{
 
 
 .amfiteatr{
-    bottom: 2%;
+    bottom: 6%;
     left: 18%;
     width: 280px;
     height:230px;
