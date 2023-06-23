@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.board{
+    width: 100%;
+    height: 100%;
+    background-color: lightgoldenrodyellow;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.description-container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    top: 0;
+    left: -30%;
+    width: 30%;
+    height: 100%;
+    background-color: rgb(159, 50, 65);
+    z-index: 2;
+    transition: .2s;
+}
+
+.description-container h2{
+    text-transform: uppercase;
+    font-family: 'Cinzel', serif;
+    font-weight: 500;
+    color:rgb(253, 219, 168);
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.description-container p{
+    font-family: 'Cinzel', serif;
+    font-weight: 500;
+    color:rgb(253, 219, 168); 
+}
+
+.close{
+    background-color:rgb(253, 219, 168);
+    border: none;
+    font-size: 20px;
+    padding: 10px 20px; 
+    font-family: 'Cinzel', serif;
+    font-weight: 500; 
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.close:hover{
+    background-color:rgb(248, 198, 123);
+}
+
+.map-container{
+    width: 80%;
+    height: 100%;
+    background-image: url(./Zasób\ 2@3x.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-color: lightcoral;
+    
+}
+
+.element-container{
+    height: 100%;
+    width: 20%;
+    background-color:rgb(159, 50, 65);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.element-item{
+    width: 100%;
+    height: 130px;
+    background-color: rgb(253, 219, 168);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.477);
+}
+
+.element-title{
+    width: 80%;
+    background-color: rgb(159, 50, 65);
+    padding: 40px;
+    text-align: center;
+    font-size: 20px;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.429);
+    text-transform: uppercase;
+    font-family: 'Cinzel', serif;
+    font-weight: 500;
+    color:rgb(253, 219, 168);
+    cursor: pointer;
+}
+
+
+.source{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    cursor: grab;
+    transition: .2s;
+}
+
+.source:hover{
+    transform: scale(1.1);
+}
+
+.target{
+    width: 200px;
+    height: 130px;
+    border: 4px dashed rgba(83, 20, 20, 0.548);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.remove-border{
+    border: none;
+}
+
+.koszary{
+    bottom: 5%;
+    left: 40%;
+    width: 350px;
+    height: 200px;
+   
+}
+
+.temple{
+    top: 15%;
+    left: 19%;
+    width: 180px;
+    height:180px;
+   
+}
+
+.forum{
+    top: 30%;
+    left: 30%;
+    width: 180px;
+    height:150px;
+    
+}
+
+.insula{
+    top: 37%;
+    left: 45%;
+    width: 150px;
+    height:150px;
+}
+
+
+.amfiteatr{
+    bottom: 2%;
+    left: 18%;
+    width: 280px;
+    height:230px;
+   
+}

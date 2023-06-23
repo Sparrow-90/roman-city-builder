@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roman City</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="description-container" data-name="insula">
+        <h2>Insula Description</h2>
+        <p>This is the description for Insula.</p>
+        <button class="close">Zamknij</button>
+      </div>
+      <div class="description-container" data-name="forum">
+        <h2>Forum Description</h2>
+        <p>This is the description for Forum.</p>
+        <button class="close">Zamknij</button>
+      </div>
+      <div class="description-container" data-name="koszary">
+        <h2>Koszary Description</h2>
+        <p>This is the description for Koszary.</p>
+        <button class="close">Zamknij</button>
+      </div>
+      <div class="description-container" data-name="temple">
+        <h2>Temple Description</h2>
+        <p>This is the description for Temple.</p>
+        <button class="close">Zamknij</button>
+      </div>
+      <div class="description-container" data-name="amfiteatr">
+        <h2>Amfiteatr Description</h2>
+        <p>This is the description for Amfiteatr.</p>
+        <button class="close">Zamknij</button>
+      </div>
+
+<div class="board">
+  <div class="map-container">
+    <div class="target insula" data-name="insula"></div>
+    <div class="target amfiteatr" data-name="amfiteatr"></div>
+    <div class="target forum" data-name="forum"></div>
+    <div class="target temple" data-name="temple"></div>
+    <div class="target koszary" data-name="koszary"></div>
+  </div>
+  <div class="element-container">
+    <div class="element-item">
+        <img src="./Insula.svg" alt="" class="source insula-img" draggable="true" data-name="insula">
+        <div class="element-title"><p class="image-title">Insula<p></div>
+    </div>
+    <div class="element-item">
+        <img src="./forum.svg" alt="" class="source" draggable="true" data-name="forum">
+        <div class="element-title"><p class="image-title">Forum<p></div>
+    </div>
+    <div class="element-item">
+        <img src="./koszary.svg" alt="" class="source" draggable="true" data-name="koszary">
+        <div class="element-title"><p class="image-title">Koszary<p></div>
+    </div>
+    <div class="element-item">
+        <img src="./temple.svg" alt="" class="source" draggable="true" data-name="temple">
+        <div class="element-title"><p class="image-title">Świątynia<p></div>
+    </div>
+    <div class="element-item">
+        <img src="./amfiteatr.svg" alt="" class="source" draggable="true" data-name="amfiteatr">
+        <div class="element-title"><p class="image-title">Teatr<p></div>
+    </div>
+  </div>
+</div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
