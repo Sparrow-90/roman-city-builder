@@ -60,7 +60,7 @@ targets.forEach((target) => {
 elementTitles.forEach((title, index) => {
   title.addEventListener('click', () => {
     descriptionContainers.forEach((container) => {
-      container.style.left = '-30%';
+      container.style.left = '-40%';
     });
     descriptionContainers[index].style.left = '0';
   });
@@ -70,7 +70,7 @@ elementTitles.forEach((title, index) => {
 exitBtn.forEach((exit) => {
   exit.addEventListener('click', () => {
     descriptionContainers.forEach((container) => {
-      container.style.left = '-30%';
+      container.style.left = '-40%';
     });
   });
 });
