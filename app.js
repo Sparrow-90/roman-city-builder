@@ -5,6 +5,7 @@ const descriptionContainers = document.querySelectorAll('.description-container'
 const exitBtn = document.querySelectorAll('.close');
 const dragSound = document.querySelector('.drag-sound')
 const dropSound = document.querySelector('.drop-sound')
+const wooshSound = document.querySelector('.woosh-sound')
 let selectedSource = null;
 
 // Obsługa przeciągania elementów źródłowych
@@ -19,6 +20,20 @@ sources.forEach((source) => {
   source.addEventListener('dragend', (e) => {
     e.target.style.opacity = 1;
     selectedSource = null;
+  });
+
+  source.addEventListener('click', () => {
+    const sourceName = source.dataset.name;
+    const descriptionContainer = document.querySelector(`.description-container[data-name="${sourceName}"]`);
+
+    if (descriptionContainer) {
+      descriptionContainers.forEach((container) => {
+        container.style.left = '-40%';
+      });
+
+      descriptionContainer.style.left = '0';
+      wooshSound.play()
+    }
   });
 });
 
@@ -67,6 +82,7 @@ elementTitles.forEach((title, index) => {
       container.style.left = '-40%';
     });
     descriptionContainers[index].style.left = '0';
+    wooshSound.play()
   });
 });
 
