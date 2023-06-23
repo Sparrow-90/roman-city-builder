@@ -3,6 +3,8 @@ const targets = document.querySelectorAll('.target');
 const elementTitles = document.querySelectorAll('.element-title');
 const descriptionContainers = document.querySelectorAll('.description-container');
 const exitBtn = document.querySelectorAll('.close');
+const dragSound = document.querySelector('.drag-sound')
+const dropSound = document.querySelector('.drop-sound')
 let selectedSource = null;
 
 // Obsługa przeciągania elementów źródłowych
@@ -11,6 +13,7 @@ sources.forEach((source) => {
     e.dataTransfer.setData('text/plain', e.target.dataset.name);
     e.target.style.opacity = 0.3;
     selectedSource = e.target;
+    dragSound.play()
   });
 
   source.addEventListener('dragend', (e) => {
@@ -48,6 +51,7 @@ targets.forEach((target) => {
       sourceElement.style.width = `${target.clientWidth}px`;
       sourceElement.style.height = `${target.clientHeight}px`;
       sourceElement.setAttribute('draggable', 'false');
+      dropSound.play()
     }
 
     targets.forEach((target) => {
