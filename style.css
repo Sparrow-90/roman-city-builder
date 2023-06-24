@@ -130,8 +130,12 @@ body{
     font-weight: 500;
     color:rgb(253, 219, 168);
     cursor: pointer;
+    transition: .3s;
 }
 
+.element-title:hover{
+    background-color: rgb(109, 35, 45);
+}
 
 .source{
     position: absolute;
@@ -205,24 +209,18 @@ body{
     }
 
     .temple{
-        top: 15%;
-        left: 15%;
-        width: 11rem;
+        top: 16%;
+        left: 19%;
     }
 
     .forum{
-        top: 24%;
-        left: 26%;
-        width: 14rem;
-        height:14rem;
-        
+        top: 28%;
+        left: 29%;  
     }
 
     .insula{
         top: 34%;
         left: 45%;
-        width: 12rem;
-        height: 10rem;
     }
     .description-container p{
         line-height: 1.3rem;

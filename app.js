@@ -63,8 +63,8 @@ targets.forEach((target) => {
     if (sourceElement && sourceElement.dataset.name === target.dataset.name) {
       e.target.appendChild(sourceElement);
       e.target.classList.add('remove-border');
-      sourceElement.style.width = `${target.clientWidth}px`;
-      sourceElement.style.height = `${target.clientHeight}px`;
+      sourceElement.style.width = `(${target.clientWidth})/2 %`;
+      sourceElement.style.height = `$({target.clientHeight})/2 %`;
       sourceElement.setAttribute('draggable', 'false');
       dropSound.play()
     }
