@@ -1,75 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roman City</title>
-    <link rel="stylesheet" href="style.css">
-    <audio class="drop-sound" src="./drop.mp3"></audio>
-    <audio class="drag-sound" src="./drag.mp3"></audio>
-    <audio class="woosh-sound" src="./woosh.mp3"></audio>
+    <link rel="stylesheet" href="./style.css">
+    <audio class="drop-sound" src="./audio/drop.mp3"></audio>
+    <audio class="drag-sound" src="./audio/drag.mp3"></audio>
+    <audio class="woosh-sound" src="./audio/woosh.mp3"></audio>
 </head>
 <body>
-    <div class="description-container" data-name="insula">
+    <section class="description-container" data-name="insula">
         <h2>Insula</h2>
         <p>Rzymska Insula to wielopiętrowy, mieszkalny budynek w starożytnym Rzymie. Insule były charakterystycznymi strukturami, zbudowanymi z cegły i kamienia, z licznymi apartamentami lub pokojami wynajmowanymi przez ludność miejską. Każde piętro miało swoje własne mieszkania, zazwyczaj składające się z małego pomieszczenia z kuchnią, łazienką i sypialnią. Insule oferowały tanią i praktyczną formę zakwaterowania dla wielu mieszkańców Rzymu, chociaż często były ciasne, biedne i niezbyt bezpieczne.</p>
         <button class="close">Zamknij</button>
-      </div>
-      <div class="description-container" data-name="forum">
+    </section>
+      <section class="description-container" data-name="forum">
         <h2>Forum</h2>
         <p>Rzymskie Forum było sercem politycznym, społecznym i handlowym starożytnego Rzymu. Stanowiło też centralne miejsce spotkań obywateli. Odbywano tam publiczne wystąpienia, rozstrzygano spory prawne i handlowano. Rzymskie Forum otaczały imponujące budowle, takie jak Bazylika Julia i Bazylika Emilia, oraz świątynie, takie jak Świątynia Saturna i Świątynia Cezara. Było ważnym symbolem potęgi i bogactwa Imperium Rzymskiego. Dziś ruiny Forum stanowią popularną atrakcję turystyczną, pozostawiając świadectwo dawnej wielkości i wpływu Rzymu.</p>
         <button class="close">Zamknij</button>
-      </div>
-      <div class="description-container" data-name="koszary">
+      </section>
+      <section class="description-container" data-name="koszary">
         <h2>Koszary</h2>
         <p>Koszary rzymskie to miejsca zakwaterowania dla żołnierzy w starożytnym Rzymie. Były to duże kompleksy budynków, które służyły jako miejsce zamieszkania, szkolenia i organizacji wojskowych jednostek. Koszary były zazwyczaj budowane wokół centralnego dziedzińca lub placu, z różnymi pomieszczeniami, takimi jak sypialnie, jadalnie, stajnie i magazyny. Były one dobrze zorganizowane i zapewniały żołnierzom podstawowe udogodnienia, takie jak łaźnie i miejsca do gotowania. Koszary odgrywały kluczową rolę w utrzymaniu dyscypliny, treningu i przygotowaniu rzymskiej armii do walki.</p>
         <button class="close">Zamknij</button>
-      </div>
-      <div class="description-container" data-name="temple">
+      </section>
+      <section class="description-container" data-name="temple">
         <h2>Świątynie</h2>
         <p>Rzymska świątynia była miejscem kultu i czci dla bogów i bogiń w starożytnym Rzymie. Budowle te miały zazwyczaj klasyczną architekturę, składającą się z kolumn, portyków i głównego sanktuarium. Świątynie były zwykle poświęcone określonemu bóstwu i pełniły funkcję miejsca modlitwy, składania ofiar oraz przeprowadzania rytuałów religijnych. Wnętrze świątyni często zawierało posągi i dekoracje związane z danym bóstwem. Świątynie były centralnymi punktami życia religijnego i społecznego w starożytnym Rzymie, a ich zachowane ruiny stanowią świadectwo dawnej wiary i kultury.</p>
         <button class="close">Zamknij</button>
-      </div>
-      <div class="description-container" data-name="amfiteatr">
+      </section>
+      <section class="description-container" data-name="amfiteatr">
         <h2>Amfiteatr</h2>
         <p>Rzymski amfiteatr był olbrzymią areną, w której odbywały się walki gladiatorów, polowania na zwierzęta i inne publiczne widowiska. Był to eliptyczny budynek, z częścią centralną otoczoną widownią w kształcie okręgu lub owalu. Widownia składała się z szeregów kamiennych ławek, które mogły pomieścić dużą liczbę widzów. Areny były odpowiednio zaprojektowane, aby umożliwić widzom łatwe obserwowanie wydarzeń na arenie. Amfiteatry, takie jak Koloseum, były symbolem potęgi i wspaniałości Rzymu.</p>
         <button class="close">Zamknij</button>
-      </div>
+      </section>
 
-<div class="board">
-  <div class="map-container">
+<main class="board">
+  <section class="map-container">
     <div class="target insula" data-name="insula"></div>
     <div class="target amfiteatr" data-name="amfiteatr"></div>
     <div class="target forum" data-name="forum"></div>
     <div class="target temple" data-name="temple"></div>
     <div class="target koszary" data-name="koszary"></div>
-  </div>
-  <div class="element-container">
+  </section>
+  <section class="element-container">
     <div class="element-item">
-        <img src="./Insula.svg" alt="" class="source insula-img" draggable="true" data-name="insula">
-        <div class="element-title"><p class="image-title">Insula<p></div>
+        <img src="./img/Insula.svg" alt="obrazek rzymskiej insuli" class="source insula-img" draggable="true" data-name="insula">
+        <div class="element-title"><p class="image-title">Insula</p></div>
     </div>
     <div class="element-item">
-        <img src="./forum.svg" alt="" class="source" draggable="true" data-name="forum">
-        <div class="element-title"><p class="image-title">Forum<p></div>
+        <img src="./img/forum.svg" alt="obrazek rzysmkiego forum" class="source" draggable="true" data-name="forum">
+        <div class="element-title"><p class="image-title">Forum</p></div>
     </div>
     <div class="element-item">
-        <img src="./koszary.svg" alt="" class="source" draggable="true" data-name="koszary">
-        <div class="element-title"><p class="image-title">Koszary<p></div>
+        <img src="./img/koszary.svg" alt="obrazek rzysmkich koszary" class="source" draggable="true" data-name="koszary">
+        <div class="element-title"><p class="image-title">Koszary</p></div>
     </div>
     <div class="element-item">
-        <img src="./temple.svg" alt="" class="source" draggable="true" data-name="temple">
-        <div class="element-title"><p class="image-title">Świątynia<p></div>
+        <img src="./img/temple.svg" alt="obrazek rzysmkiej świątyni" class="source" draggable="true" data-name="temple">
+        <div class="element-title"><p class="image-title">Świątynia</p></div>
     </div>
     <div class="element-item">
-        <img src="./amfiteatr.svg" alt="" class="source" draggable="true" data-name="amfiteatr">
-        <div class="element-title"><p class="image-title">Amfiteatr<p></div>
+        <img src="./img/amfiteatr.svg" alt="obrazek rzymskiego amfiteatru" class="source" draggable="true" data-name="amfiteatr">
+        <div class="element-title">
+          <p class="image-title">Amfiteatr</p></div>
     </div>
-  </div>
-</div>
+  </section>
+</main>
 
 
 
-    <script src="app.js"></script>
+    <script src="./app.js"></script>
 </body>
 </html>
