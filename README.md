@@ -29,4 +29,8 @@ you will open a panel with interesting facts about each of them.
 <a href="https://pl.freepik.com/darmowe-wektory/starozytny-rzym-izometryczny-kreskowka-jesienny-pejzaz-miejski_30699528.htm#query=roman%20city%20builder&position=2&from_view=search&track=ais">image by upklyak</a> na Freepik
 
 
+<<<<<<< HEAD
 <h2>Have fun!</h2>
+=======
+<h2>Have fun!</h2>
+>>>>>>> 5c8d38c453246ac6908dc3309f398fc50e418e56
