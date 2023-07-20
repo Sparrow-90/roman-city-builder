@@ -54,7 +54,7 @@ body{
     font-family: 'Cinzel', serif;
     font-weight: 500;
     color:rgb(253, 219, 168); 
-    width: 70%;
+    width: 80%;
     line-height: 1.8rem;
     text-align: justify;
 }
@@ -236,5 +236,7 @@ body{
 @media only screen and (max-width: 1200px){
     .description-container p{
         line-height: 1rem;
+        font-size: 0.8rem;
+        white-space: normal;
     }
 }
